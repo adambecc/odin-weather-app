@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background: linear-gradient(to bottom, #007aff, #00c6ff);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  background: #ffffff20;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ff7e5f;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #feb47b;
+}
+
+#loading {
+  font-size: 1.2rem;
+  color: #ff7e5f;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#weather-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#city-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#temperature {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffeb3b;
+}
+
+#description {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  #temperature {
+    font-size: 2rem;
+  }
+}
